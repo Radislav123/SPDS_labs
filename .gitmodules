@@ -4,4 +4,4 @@
 
 [submodule "schoolMIPS_01_mmio"]
     path = schoolMIPS_01_mmio
-    url = https://github.com/MIPSfpga/schoolMIPS.git -b 01_mmio
+    url = git://github.com/MIPSfpga/schoolMIPS.git -b 01_mmio
