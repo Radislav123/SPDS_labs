@@ -1,0 +1,7 @@
+[submodule "schoolMIPS"]
+    path = schoolMIPS
+    url = git://github.com/chneukirchen/rack.git
+
+[submodule "schoolMIPS_01_mmio"]
+    path = schoolMIPS_01_mmio
+    url = https://github.com/MIPSfpga/schoolMIPS.git -b 01_mmio
