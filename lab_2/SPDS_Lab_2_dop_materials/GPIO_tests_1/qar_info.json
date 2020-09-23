@@ -1,0 +1,7 @@
+{
+	"common_dir" : "C:/Quartus_projects/ltsh/DE1-Soc ART1/",
+	"acds_version" : "Version 16.1.0",
+	"platform" : "windows",
+	"os" : "Windows 8.1",
+	"qpf" : "FPGA_DE1_Soc.qpf"
+}
