@@ -25,15 +25,13 @@ module de10_standard
     wire          clk;
     wire          clkIn     =  CLOCK_50;
     wire          rst_n     =  KEY[0];
-    // wire          clkEnable =  SW [9] | ~KEY[1];
-    // wire [  3:0 ] clkDevide =  SW [8:5];
-    // wire [  4:0 ] regAddr   =  SW [4:0];
+    wire          clkEnable =  SW [9] | ~KEY[1];
+    wire [  3:0 ] clkDevide =  SW [8:5];
+    wire [  4:0 ] regAddr   =  SW [4:0];
     wire [ 31:0 ] regData;
 	
 	// DIP-switch
-    wire          clkEnable =  GPIO[35] | ~KEY[1];
-    wire [  3:0 ] clkDevide =  GPIO[34:31];
-    wire [  4:0 ] regAddr   =  GPIO[30:26];
+	wire [7:0] DIP = GPIO [35:28];
 
     //cores
     sm_top sm_top
