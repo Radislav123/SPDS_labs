@@ -1,5 +1,3 @@
-
-
 module de10_standard
 (
     input                       CLOCK2_50,
@@ -18,7 +16,9 @@ module de10_standard
     output           [6:0]      HEX2,
     output           [6:0]      HEX3,
     output           [6:0]      HEX4,
-    output           [6:0]      HEX5
+    output           [6:0]      HEX5,
+	
+	output [35:0] GPIO
 );
 
     // wires & inputs
@@ -54,5 +54,15 @@ module de10_standard
     sm_hex_display digit_2 ( h7segment [11: 8] , HEX2 [6:0] );
     sm_hex_display digit_1 ( h7segment [ 7: 4] , HEX1 [6:0] );
     sm_hex_display digit_0 ( h7segment [ 3: 0] , HEX0 [6:0] );
+    
+    external_sm_hex_display external_sm_hex_display
+	(
+		.digit_in_1(h7segment[3:0]),
+		.digit_in_2(h7segment[7:4]),
+		.digit_in_3(h7segment[11:8]),
+		.clkIn(clkIn),
+		.seven_segments(GPIO[11:0]) // заменить выводы на нужные
+	);
+
 
 endmodule
