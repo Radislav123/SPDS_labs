@@ -18,17 +18,22 @@ module de10_standard
     output           [6:0]      HEX4,
     output           [6:0]      HEX5,
 	
-	output [35:0] GPIO
+	inout [35:0] GPIO
 );
 
     // wires & inputs
     wire          clk;
     wire          clkIn     =  CLOCK_50;
     wire          rst_n     =  KEY[0];
-    wire          clkEnable =  SW [9] | ~KEY[1];
-    wire [  3:0 ] clkDevide =  SW [8:5];
-    wire [  4:0 ] regAddr   =  SW [4:0];
+    // wire          clkEnable =  SW [9] | ~KEY[1];
+    // wire [  3:0 ] clkDevide =  SW [8:5];
+    // wire [  4:0 ] regAddr   =  SW [4:0];
     wire [ 31:0 ] regData;
+	
+	// DIP-switch
+    wire          clkEnable =  GPIO[35] | ~KEY[1];
+    wire [  3:0 ] clkDevide =  GPIO[34:31];
+    wire [  4:0 ] regAddr   =  GPIO[30:26];
 
     //cores
     sm_top sm_top
@@ -61,8 +66,7 @@ module de10_standard
 		.digit_in_2(h7segment[7:4]),
 		.digit_in_3(h7segment[11:8]),
 		.clkIn(clkIn),
-		.seven_segments(GPIO[11:0]) // заменить выводы на нужные
+		.seven_segments(GPIO[11:0])
 	);
-
-
+	
 endmodule
