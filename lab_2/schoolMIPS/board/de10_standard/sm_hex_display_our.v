@@ -22,6 +22,7 @@ module sm_hex_display_our
 			'hc: seven_segments = 'b0111001;
 			'he: seven_segments = 'b1111001;
 			'hf: seven_segments = 'b1110001;
+			default: seven_segments = 'b0000000;
 		endcase
 	
 endmodule

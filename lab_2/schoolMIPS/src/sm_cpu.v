@@ -27,6 +27,7 @@ module sm_cpu
     wire        aluSrc;
     wire        aluZero;
     wire [ 2:0] aluControl;
+	wire 		dataToRegDst;	// lab_2 special
 
     //program counter
     wire [31:0] pc;
@@ -47,7 +48,7 @@ module sm_cpu
     wire [ 4:0] a3  = regDst ? instr[15:11] : instr[20:16];
     wire [31:0] rd1;
     wire [31:0] rd2;
-    wire [31:0] wd3;
+    wire [31:0] wd3 = dataToRegDst ? dip_sw : aluResult;
 
     sm_register_file rf
     (
@@ -69,6 +70,7 @@ module sm_cpu
 
     //alu
     wire [31:0] srcB = aluSrc ? signImm : rd2;
+	wire [31:0] aluResult;
 
     sm_alu alu
     (
@@ -77,20 +79,21 @@ module sm_cpu
         .oper       ( aluControl   ),
         .shift      ( instr[10:6 ] ),
         .zero       ( aluZero      ),
-        .result     ( wd3          ) 
+        .result     ( aluResult    ) 
     );
 
     //control
     sm_control sm_control
     (
-        .cmdOper    ( instr[31:26] ),
-        .cmdFunk    ( instr[ 5:0 ] ),
-        .aluZero    ( aluZero      ),
-        .pcSrc      ( pcSrc        ), 
-        .regDst     ( regDst       ), 
-        .regWrite   ( regWrite     ), 
-        .aluSrc     ( aluSrc       ),
-        .aluControl ( aluControl   )
+        .cmdOper		( instr[31:26] ),
+        .cmdFunk    	( instr[ 5:0 ] ),
+        .aluZero    	( aluZero      ),
+        .pcSrc      	( pcSrc        ), 
+        .regDst     	( regDst       ), 
+        .regWrite   	( regWrite     ), 
+        .aluSrc     	( aluSrc       ),
+        .aluControl 	( aluControl   ),
+		.dataToRegDst	( dataToRegDst )
     );
 
 endmodule
@@ -104,19 +107,21 @@ module sm_control
     output reg       regDst, 
     output reg       regWrite, 
     output reg       aluSrc,
-    output reg [2:0] aluControl
+    output reg [2:0] aluControl,
+	output reg		 dataToRegDst	// lab_2 special
 );
     reg          branch;
     reg          condZero;
     assign pcSrc = branch & (aluZero == condZero);
 
     always @ (*) begin
-        branch      = 1'b0;
-        condZero    = 1'b0;
-        regDst      = 1'b0;
-        regWrite    = 1'b0;
-        aluSrc      = 1'b0;
-        aluControl  = `ALU_ADD;
+        branch       = 1'b0;
+        condZero     = 1'b0;
+        regDst       = 1'b0;
+        regWrite     = 1'b0;
+        aluSrc       = 1'b0;
+        aluControl   = `ALU_ADD;
+		dataToRegDst = 1'b0;
 
         casez( {cmdOper,cmdFunk} )
             default               : ;
@@ -132,6 +137,8 @@ module sm_control
 
             { `C_BEQ,   `F_ANY  } : begin branch = 1'b1; condZero = 1'b1; aluControl = `ALU_SUBU; end
             { `C_BNE,   `F_ANY  } : begin branch = 1'b1; aluControl = `ALU_SUBU; end
+			
+			{ `C_RSW,	`F_ANY	} : begin regWrite = 1'b1; dataToRegDst = 1'b1; end
         endcase
     end
 endmodule

@@ -44,7 +44,7 @@ module sm_top
         .regData    ( regData   ),
         .imAddr     ( imAddr    ),
         .imData     ( imData    ),
-		.dip_sw		( sw_dip	)
+		.dip_sw		( dip_sw	)
     );
 
 endmodule

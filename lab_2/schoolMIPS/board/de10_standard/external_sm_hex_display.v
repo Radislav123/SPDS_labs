@@ -20,7 +20,7 @@ module external_sm_hex_display
 		.digit1(digit1),
 		.digit2(digit2),
 		.digit3(digit3),
-		.clkIn(ClkIn),
+		.clkIn(clkIn),
 		.seven_segments(seven_segments)
 	);
 	

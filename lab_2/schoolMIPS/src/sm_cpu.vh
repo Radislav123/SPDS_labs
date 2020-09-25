@@ -26,6 +26,8 @@
                               //         Rt = Immed << 16
 `define C_BNE       6'b000101 // I-type, Branch on Not Equal
                               //         if (Rs != Rt) PC += (int)offset
+`define C_RSW       6'b110000 // special for lab_2, read data from DIP-switch to register
+
 
 //instruction function field
 `define F_ADDU      6'b100001 // R-type, Integer Add Unsigned
