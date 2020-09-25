@@ -30,6 +30,8 @@ module de10_standard
     wire [  4:0 ] regAddr   =  SW [4:0];
     wire [ 31:0 ] regData;
 	
+	assign GPIO[27:12] = 0;
+	
 	// DIP-switch
 	wire [7:0] dip_sw = GPIO [35:28];
 

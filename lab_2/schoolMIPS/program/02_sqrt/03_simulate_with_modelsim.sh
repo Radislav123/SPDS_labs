@@ -1,8 +1,10 @@
-rd /s /q sim
-md sim
+#!/bin/bash
+
+rm -rf sim
+mkdir sim
 cd sim
 
-copy ..\*.hex .
+cp ../*.hex .
 
 vsim -novopt -do ../modelsim_script.tcl
 

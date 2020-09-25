@@ -9,7 +9,7 @@ module external_sm_hex_display
 	output [11:0] seven_segments
 );
 	
-	wire [7:0] digit1, digit2, digit3;
+	wire [6:0] digit1, digit2, digit3;
 	
 	sm_hex_display_our digit_00 (digit_in_1, digit1);
 	sm_hex_display_our digit_01 (digit_in_2, digit2);

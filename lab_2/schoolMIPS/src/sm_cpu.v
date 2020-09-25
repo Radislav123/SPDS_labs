@@ -48,7 +48,7 @@ module sm_cpu
     wire [ 4:0] a3  = regDst ? instr[15:11] : instr[20:16];
     wire [31:0] rd1;
     wire [31:0] rd2;
-    wire [31:0] wd3 = dataToRegDst ? dip_sw : aluResult;
+    wire [31:0] wd3 = dataToRegDst ? zeroExtDipSw : aluResult;
 
     sm_register_file rf
     (
@@ -67,6 +67,9 @@ module sm_cpu
     //sign extension
     wire [31:0] signImm = { {16 { instr[15] }}, instr[15:0] };
     assign pcBranch = pcNext + signImm;
+	
+	//zero extension
+	wire [31:0] zeroExtDipSw = { {24 { 1'b0 }}, dip_sw[7:0] };
 
     //alu
     wire [31:0] srcB = aluSrc ? signImm : rd2;
