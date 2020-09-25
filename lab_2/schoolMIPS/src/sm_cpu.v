@@ -17,7 +17,8 @@ module sm_cpu
     input   [ 4:0]  regAddr,    // debug access reg address
     output  [31:0]  regData,    // debug access reg data
     output  [31:0]  imAddr,     // instruction memory address
-    input   [31:0]  imData      // instruction memory data
+    input   [31:0]  imData,		// instruction memory data
+	input	[ 7:0]	dip_sw		// DIP switch for lab_2 task
 );
     //control wires
     wire        pcSrc;

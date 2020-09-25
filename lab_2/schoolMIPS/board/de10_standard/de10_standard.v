@@ -31,7 +31,7 @@ module de10_standard
     wire [ 31:0 ] regData;
 	
 	// DIP-switch
-	wire [7:0] DIP = GPIO [35:28];
+	wire [7:0] dip_sw = GPIO [35:28];
 
     //cores
     sm_top sm_top
@@ -42,7 +42,8 @@ module de10_standard
         .clkEnable  ( clkEnable ),
         .clk        ( clk       ),
         .regAddr    ( regAddr   ),
-        .regData    ( regData   )
+        .regData    ( regData   ),
+		.dip_sw		( dip_sw	)
     );
 
     //outputs

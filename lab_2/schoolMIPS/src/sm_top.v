@@ -8,7 +8,8 @@ module sm_top
     input           clkEnable,
     output          clk,
     input   [ 4:0 ] regAddr,
-    output  [31:0 ] regData
+    output  [31:0 ] regData,
+	input	[ 7:0 ] dip_sw		// DIP switch for lab_2 task
 );
     //metastability input filters
     wire    [ 3:0 ] devide;
@@ -42,7 +43,8 @@ module sm_top
         .regAddr    ( addr      ),
         .regData    ( regData   ),
         .imAddr     ( imAddr    ),
-        .imData     ( imData    )
+        .imData     ( imData    ),
+		.dip_sw		( sw_dip	)
     );
 
 endmodule
