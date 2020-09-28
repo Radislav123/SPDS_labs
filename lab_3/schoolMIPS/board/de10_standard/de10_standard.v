@@ -23,11 +23,13 @@ module de10_standard
 
     // wires & inputs
     wire          clk;
-    wire          clkIn     =  CLOCK_50;
-    wire          rst_n     =  KEY[0];
-    wire          clkEnable =  SW [9] | ~KEY[1];
-    wire [  3:0 ] clkDevide =  SW [8:5];
-    wire [  4:0 ] regAddr   =  SW [4:0];
+    wire          clkIn      =  CLOCK_50;
+    wire          rst_n      =  KEY[0];
+    wire          clkEnable  =  SW [9] | ~KEY[1];
+    wire [  3:0 ] clkDevide  =  SW [8:5];
+    wire [  4:0 ] regAddr    =  SW [4:0];
+	wire [  4:0 ] dmRAddrOut =	SW [4:0];
+	wire [ 31:0 ] dmRDataOut;
     wire [ 31:0 ] regData;
 
     //cores
@@ -39,14 +41,16 @@ module de10_standard
         .clkEnable  ( clkEnable ),
         .clk        ( clk       ),
         .regAddr    ( regAddr   ),
-        .regData    ( regData   )
+        .regData    ( regData   ),
+		.dmRAddrOut ( dmRAddrOut),
+		.dmRDataOut ( dmRDataOut)
     );
 
     //outputs
     assign LEDR[0]   = clk;
     assign LEDR[9:1] = regData[8:0];
 
-    wire [ 31:0 ] h7segment = regData;
+    wire [ 31:0 ] h7segment = dmRDataOut;
 
     sm_hex_display digit_5 ( h7segment [23:20] , HEX5 [6:0] );
     sm_hex_display digit_4 ( h7segment [19:16] , HEX4 [6:0] );

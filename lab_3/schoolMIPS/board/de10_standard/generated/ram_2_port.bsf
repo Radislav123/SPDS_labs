@@ -33,8 +33,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "address_a[3..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
-		(text "address_a[3..0]" (rect 4 34 78 47)(font "Arial" (font_size 8)))
+		(text "address_a[4..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "address_a[4..0]" (rect 4 34 78 47)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 112 48)(line_width 3))
 	)
 	(port
@@ -54,8 +54,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "address_b[3..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
-		(text "address_b[3..0]" (rect 4 98 78 111)(font "Arial" (font_size 8)))
+		(text "address_b[4..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "address_b[4..0]" (rect 4 98 78 111)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 112 112)(line_width 3))
 	)
 	(port
@@ -87,7 +87,7 @@ refer to the applicable agreement for further details.
 		(line (pt 256 96)(pt 168 96)(line_width 3))
 	)
 	(drawing
-		(text "16 Word(s)" (rect 137 43 255 225)(font "Arial" )(vertical))
+		(text "32 Word(s)" (rect 137 43 255 225)(font "Arial" )(vertical))
 		(text "RAM" (rect 148 32 253 199)(font "Arial" )(vertical))
 		(text "Block Type: M10K" (rect 40 173 155 357)(font "Arial" ))
 		(line (pt 128 24)(pt 168 24))

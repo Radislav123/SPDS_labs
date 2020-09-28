@@ -8,7 +8,9 @@ module sm_top
     input           clkEnable,
     output          clk,
     input   [ 4:0 ] regAddr,
-    output  [31:0 ] regData
+    output  [31:0 ] regData,
+	input	[ 4:0 ]	dmRAddrOut,	// data memory read addres to 7-segments display
+	output	[31:0 ]	dmRDataOut	// memory data readed to 7-segments display
 );
     //metastability input filters
     wire    [ 3:0 ] devide;
@@ -42,7 +44,9 @@ module sm_top
         .regAddr    ( addr      ),
         .regData    ( regData   ),
         .imAddr     ( imAddr    ),
-        .imData     ( imData    )
+        .imData     ( imData    ),
+		.dmRAddrOut ( dmRAddrOut),
+		.dmRDataOut	( dmRDataOut)
     );
 
 endmodule
