@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at sm_hex_display_digit.v(14): always construct contains both blocking and non-blocking assignments File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_digit.v Line: 14

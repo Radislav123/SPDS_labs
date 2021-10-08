@@ -73,7 +73,7 @@ module sm_cpu
 
     //alu
     wire [31:0] srcB = aluSrc ? signImm : rd2;
-	wire [31:0] aluResult;
+    wire [31:0] aluResult;
 
     sm_alu alu
     (
