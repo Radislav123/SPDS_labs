@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for de10_standard
-Fri Oct 08 12:57:11 2021
+Fri Oct 08 13:21:21 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -93,7 +93,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.30        ;
@@ -102,8 +102,8 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;  10.2%      ;
-;     Processor 3            ;   9.9%      ;
-;     Processor 4            ;   9.7%      ;
+;     Processor 3            ;  10.2%      ;
+;     Processor 4            ;  10.1%      ;
 +----------------------------+-------------+
 
 
@@ -112,7 +112,7 @@ refer to the applicable agreement for further details.
 +-------------------+--------+--------------------------+
 ; SDC File Path     ; Status ; Read at                  ;
 +-------------------+--------+--------------------------+
-; de10_standard.SDC ; OK     ; Fri Oct 08 12:57:05 2021 ;
+; de10_standard.SDC ; OK     ; Fri Oct 08 13:21:15 2021 ;
 +-------------------+--------+--------------------------+
 
 
@@ -813,7 +813,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Oct 08 12:57:03 2021
+    Info: Processing started: Fri Oct 08 13:21:13 2021
 Info: Command: quartus_sta de10_standard -c de10_standard
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -821,22 +821,22 @@ Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'de10_standard.SDC'
-Warning (332174): Ignored filter at de10_standard.sdc(8): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 8
-Warning (332049): Ignored create_clock at de10_standard.sdc(8): Argument <targets> is not an object ID File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 8
-    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 8
-Warning (332174): Ignored filter at de10_standard.sdc(9): altera_reserved_tdi could not be matched with a port File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
-Warning (332174): Ignored filter at de10_standard.sdc(9): altera_reserved_tck could not be matched with a clock File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
-Warning (332049): Ignored set_input_delay at de10_standard.sdc(9): Argument <targets> is an empty collection File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
-    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
-Warning (332049): Ignored set_input_delay at de10_standard.sdc(9): Argument -clock is not an object ID File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
-Warning (332174): Ignored filter at de10_standard.sdc(10): altera_reserved_tms could not be matched with a port File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 10
-Warning (332049): Ignored set_input_delay at de10_standard.sdc(10): Argument <targets> is an empty collection File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 10
-    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 10
-Warning (332049): Ignored set_input_delay at de10_standard.sdc(10): Argument -clock is not an object ID File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 10
-Warning (332174): Ignored filter at de10_standard.sdc(11): altera_reserved_tdo could not be matched with a port File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 11
-Warning (332049): Ignored set_output_delay at de10_standard.sdc(11): Argument <targets> is an empty collection File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 11
-    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 11
-Warning (332049): Ignored set_output_delay at de10_standard.sdc(11): Argument -clock is not an object ID File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 11
+Warning (332174): Ignored filter at de10_standard.sdc(8): altera_reserved_tck could not be matched with a port or pin or register or keeper or net or combinational node or node File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 8
+Warning (332049): Ignored create_clock at de10_standard.sdc(8): Argument <targets> is not an object ID File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 8
+    Info (332050): create_clock -name {altera_reserved_tck} -period 40 {altera_reserved_tck} File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 8
+Warning (332174): Ignored filter at de10_standard.sdc(9): altera_reserved_tdi could not be matched with a port File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
+Warning (332174): Ignored filter at de10_standard.sdc(9): altera_reserved_tck could not be matched with a clock File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
+Warning (332049): Ignored set_input_delay at de10_standard.sdc(9): Argument <targets> is an empty collection File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tdi] File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
+Warning (332049): Ignored set_input_delay at de10_standard.sdc(9): Argument -clock is not an object ID File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 9
+Warning (332174): Ignored filter at de10_standard.sdc(10): altera_reserved_tms could not be matched with a port File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 10
+Warning (332049): Ignored set_input_delay at de10_standard.sdc(10): Argument <targets> is an empty collection File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 10
+    Info (332050): set_input_delay -clock altera_reserved_tck -clock_fall 3 [get_ports altera_reserved_tms] File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 10
+Warning (332049): Ignored set_input_delay at de10_standard.sdc(10): Argument -clock is not an object ID File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 10
+Warning (332174): Ignored filter at de10_standard.sdc(11): altera_reserved_tdo could not be matched with a port File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 11
+Warning (332049): Ignored set_output_delay at de10_standard.sdc(11): Argument <targets> is an empty collection File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 11
+    Info (332050): set_output_delay -clock altera_reserved_tck 3 [get_ports altera_reserved_tdo] File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 11
+Warning (332049): Ignored set_output_delay at de10_standard.sdc(11): Argument -clock is not an object ID File: D:/Quartus_labs/SPDS/lab_3/schoolMIPS/board/de10_standard/de10_standard.sdc Line: 11
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
@@ -950,9 +950,9 @@ Info (332114): Report Metastability: Found 5 synchronizer chains.
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 5170 megabytes
-    Info: Processing ended: Fri Oct 08 12:57:11 2021
+    Info: Peak virtual memory: 5173 megabytes
+    Info: Processing ended: Fri Oct 08 13:21:21 2021
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Total CPU time (on all processors): 00:00:10
 
 

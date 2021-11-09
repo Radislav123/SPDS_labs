@@ -1,5 +1,5 @@
 Analysis & Synthesis report for de10_standard
-Fri Oct 08 13:09:50 2021
+Fri Oct 08 13:16:25 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 08 13:09:50 2021       ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 08 13:16:25 2021       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; de10_standard                               ;
 ; Top-level Entity Name           ; de10_standard                               ;
@@ -168,7 +168,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -182,33 +182,33 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                        ;
-+---------------------------------------------------------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                                ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                                                      ; Library ;
-+---------------------------------------------------------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
-; ../../../src/sm_rom.v                                                           ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_rom.v                                  ;         ;
-; ../../../src/sm_register.v                                                      ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_register.v                             ;         ;
-; ../../../src/sm_hex_display.v                                                   ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_hex_display.v                          ;         ;
-; ../../../src/sm_cpu.v                                                           ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v                                  ;         ;
-; ../../../src/sm_top.v                                                           ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v                                  ;         ;
-; ../de10_standard.v                                                              ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v           ;         ;
-; ../external_sm_hex_display.v                                                    ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/external_sm_hex_display.v ;         ;
-; ../sm_hex_display_digit.v                                                       ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_digit.v    ;         ;
-; ../sm_hex_display_our.v                                                         ; yes             ; User Verilog HDL File                       ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_our.v      ;         ;
-; /users/forga/yandexdisk/education/2020-2022/spds/lab_2/schoolmips/src/sm_cpu.vh ; yes             ; Auto-Found Unspecified File                 ; /users/forga/yandexdisk/education/2020-2022/spds/lab_2/schoolmips/src/sm_cpu.vh                                   ;         ;
-; program.hex                                                                     ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/program.hex                             ;         ;
-; altsyncram.tdf                                                                  ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf                                             ;         ;
-; stratix_ram_block.inc                                                           ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                      ;         ;
-; lpm_mux.inc                                                                     ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc                                                ;         ;
-; lpm_decode.inc                                                                  ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc                                             ;         ;
-; aglobal171.inc                                                                  ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                             ;         ;
-; a_rdenreg.inc                                                                   ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                                              ;         ;
-; altrom.inc                                                                      ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc                                                 ;         ;
-; altram.inc                                                                      ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc                                                 ;         ;
-; altdpram.inc                                                                    ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                                               ;         ;
-; db/altsyncram_66j1.tdf                                                          ; yes             ; Auto-Generated Megafunction                 ; C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/db/altsyncram_66j1.tdf    ;         ;
-+---------------------------------------------------------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                            ;
++---------------------------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                  ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                        ; Library ;
++---------------------------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------+---------+
+; ../../../src/sm_rom.v                             ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_rom.v                                  ;         ;
+; ../../../src/sm_register.v                        ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_register.v                             ;         ;
+; ../../../src/sm_hex_display.v                     ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_hex_display.v                          ;         ;
+; ../../../src/sm_cpu.v                             ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v                                  ;         ;
+; ../../../src/sm_top.v                             ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v                                  ;         ;
+; ../de10_standard.v                                ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v           ;         ;
+; ../external_sm_hex_display.v                      ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/external_sm_hex_display.v ;         ;
+; ../sm_hex_display_digit.v                         ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_digit.v    ;         ;
+; ../sm_hex_display_our.v                           ; yes             ; User Verilog HDL File                       ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_our.v      ;         ;
+; /quartus_labs/spds/lab_2/schoolmips/src/sm_cpu.vh ; yes             ; Auto-Found Unspecified File                 ; /quartus_labs/spds/lab_2/schoolmips/src/sm_cpu.vh                                   ;         ;
+; program.hex                                       ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/program.hex                             ;         ;
+; altsyncram.tdf                                    ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf               ;         ;
+; stratix_ram_block.inc                             ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc        ;         ;
+; lpm_mux.inc                                       ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc                  ;         ;
+; lpm_decode.inc                                    ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc               ;         ;
+; aglobal171.inc                                    ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc               ;         ;
+; a_rdenreg.inc                                     ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                ;         ;
+; altrom.inc                                        ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc                   ;         ;
+; altram.inc                                        ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc                   ;         ;
+; altdpram.inc                                      ; yes             ; Megafunction                                ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
+; db/altsyncram_66j1.tdf                            ; yes             ; Auto-Generated Megafunction                 ; D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/db/altsyncram_66j1.tdf    ;         ;
++---------------------------------------------------+-----------------+---------------------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -1353,7 +1353,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -1363,62 +1363,62 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Oct 08 13:09:35 2021
+    Info: Processing started: Fri Oct 08 13:15:53 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de10_standard -c de10_standard
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/forga/yandexdisk/education/2020-2022/spds/lab_2/schoolmips/src/sm_rom.v
-    Info (12023): Found entity 1: sm_rom File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 2
-Info (12021): Found 2 design units, including 2 entities, in source file /users/forga/yandexdisk/education/2020-2022/spds/lab_2/schoolmips/src/sm_register.v
-    Info (12023): Found entity 1: sm_register File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_register.v Line: 3
-    Info (12023): Found entity 2: sm_register_we File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_register.v Line: 18
-Info (12021): Found 2 design units, including 2 entities, in source file /users/forga/yandexdisk/education/2020-2022/spds/lab_2/schoolmips/src/sm_hex_display.v
-    Info (12023): Found entity 1: sm_hex_display File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_hex_display.v Line: 2
-    Info (12023): Found entity 2: sm_hex_display_8 File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_hex_display.v Line: 32
-Info (12021): Found 4 design units, including 4 entities, in source file /users/forga/yandexdisk/education/2020-2022/spds/lab_2/schoolmips/src/sm_cpu.v
-    Info (12023): Found entity 1: sm_cpu File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 13
-    Info (12023): Found entity 2: sm_control File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 104
-    Info (12023): Found entity 3: sm_alu File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 150
-    Info (12023): Found entity 4: sm_register_file File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 174
-Info (12021): Found 3 design units, including 3 entities, in source file /users/forga/yandexdisk/education/2020-2022/spds/lab_2/schoolmips/src/sm_top.v
-    Info (12023): Found entity 1: sm_top File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 3
-    Info (12023): Found entity 2: sm_debouncer File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 53
-    Info (12023): Found entity 3: sm_clk_divider File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 72
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus_labs/spds/lab_2/schoolmips/src/sm_rom.v
+    Info (12023): Found entity 1: sm_rom File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 2
+Info (12021): Found 2 design units, including 2 entities, in source file /quartus_labs/spds/lab_2/schoolmips/src/sm_register.v
+    Info (12023): Found entity 1: sm_register File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_register.v Line: 3
+    Info (12023): Found entity 2: sm_register_we File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_register.v Line: 18
+Info (12021): Found 2 design units, including 2 entities, in source file /quartus_labs/spds/lab_2/schoolmips/src/sm_hex_display.v
+    Info (12023): Found entity 1: sm_hex_display File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_hex_display.v Line: 2
+    Info (12023): Found entity 2: sm_hex_display_8 File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_hex_display.v Line: 32
+Info (12021): Found 4 design units, including 4 entities, in source file /quartus_labs/spds/lab_2/schoolmips/src/sm_cpu.v
+    Info (12023): Found entity 1: sm_cpu File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 13
+    Info (12023): Found entity 2: sm_control File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 104
+    Info (12023): Found entity 3: sm_alu File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 150
+    Info (12023): Found entity 4: sm_register_file File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 174
+Info (12021): Found 3 design units, including 3 entities, in source file /quartus_labs/spds/lab_2/schoolmips/src/sm_top.v
+    Info (12023): Found entity 1: sm_top File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 3
+    Info (12023): Found entity 2: sm_debouncer File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 53
+    Info (12023): Found entity 3: sm_clk_divider File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 72
 Info (12021): Found 1 design units, including 1 entities, in source file de10_standard.v
-    Info (12023): Found entity 1: de10_standard File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 1
+    Info (12023): Found entity 1: de10_standard File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file external_sm_hex_display.v
-    Info (12023): Found entity 1: external_sm_hex_display File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/external_sm_hex_display.v Line: 1
+    Info (12023): Found entity 1: external_sm_hex_display File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/external_sm_hex_display.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sm_hex_display_digit.v
-    Info (12023): Found entity 1: sm_hex_display_digit File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_digit.v Line: 1
+    Info (12023): Found entity 1: sm_hex_display_digit File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_digit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sm_hex_display_our.v
-    Info (12023): Found entity 1: sm_hex_display_our File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_our.v Line: 1
+    Info (12023): Found entity 1: sm_hex_display_our File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/sm_hex_display_our.v Line: 1
 Info (12127): Elaborating entity "de10_standard" for the top level hierarchy
-Info (12128): Elaborating entity "sm_top" for hierarchy "sm_top:sm_top" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 49
-Info (12128): Elaborating entity "sm_debouncer" for hierarchy "sm_top:sm_top|sm_debouncer:f0" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 19
-Info (12128): Elaborating entity "sm_debouncer" for hierarchy "sm_top:sm_top|sm_debouncer:f1" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 20
-Info (12128): Elaborating entity "sm_debouncer" for hierarchy "sm_top:sm_top|sm_debouncer:f2" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 21
-Info (12128): Elaborating entity "sm_clk_divider" for hierarchy "sm_top:sm_top|sm_clk_divider:sm_clk_divider" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 32
-Info (12128): Elaborating entity "sm_register_we" for hierarchy "sm_top:sm_top|sm_clk_divider:sm_clk_divider|sm_register_we:r_cntr" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 86
-Info (12128): Elaborating entity "sm_rom" for hierarchy "sm_top:sm_top|sm_rom:reset_rom" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 37
-Warning (10850): Verilog HDL warning at sm_rom.v(14): number of words (14) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 14
-Warning (10030): Net "rom.data_a" at sm_rom.v(10) has no driver or initial value, using a default initial value '0' File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 10
-Warning (10030): Net "rom.waddr_a" at sm_rom.v(10) has no driver or initial value, using a default initial value '0' File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 10
-Warning (10030): Net "rom.we_a" at sm_rom.v(10) has no driver or initial value, using a default initial value '0' File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 10
-Info (12128): Elaborating entity "sm_cpu" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 48
-Info (12128): Elaborating entity "sm_register" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu|sm_register:r_pc" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 37
-Info (12128): Elaborating entity "sm_register_file" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu|sm_register_file:rf" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 65
-Info (12128): Elaborating entity "sm_alu" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu|sm_alu:alu" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 86
-Info (12128): Elaborating entity "sm_control" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu|sm_control:sm_control" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 100
-Info (12128): Elaborating entity "sm_hex_display" for hierarchy "sm_hex_display:digit_5" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 57
-Info (12128): Elaborating entity "external_sm_hex_display" for hierarchy "external_sm_hex_display:external_sm_hex_display" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 71
-Info (12128): Elaborating entity "sm_hex_display_our" for hierarchy "external_sm_hex_display:external_sm_hex_display|sm_hex_display_our:digit_00" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/external_sm_hex_display.v Line: 14
-Info (12128): Elaborating entity "sm_hex_display_digit" for hierarchy "external_sm_hex_display:external_sm_hex_display|sm_hex_display_digit:sm_hex_display_digit" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/external_sm_hex_display.v Line: 25
+Info (12128): Elaborating entity "sm_top" for hierarchy "sm_top:sm_top" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 49
+Info (12128): Elaborating entity "sm_debouncer" for hierarchy "sm_top:sm_top|sm_debouncer:f0" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 19
+Info (12128): Elaborating entity "sm_debouncer" for hierarchy "sm_top:sm_top|sm_debouncer:f1" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 20
+Info (12128): Elaborating entity "sm_debouncer" for hierarchy "sm_top:sm_top|sm_debouncer:f2" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 21
+Info (12128): Elaborating entity "sm_clk_divider" for hierarchy "sm_top:sm_top|sm_clk_divider:sm_clk_divider" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 32
+Info (12128): Elaborating entity "sm_register_we" for hierarchy "sm_top:sm_top|sm_clk_divider:sm_clk_divider|sm_register_we:r_cntr" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 86
+Info (12128): Elaborating entity "sm_rom" for hierarchy "sm_top:sm_top|sm_rom:reset_rom" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 37
+Warning (10850): Verilog HDL warning at sm_rom.v(14): number of words (14) in memory file does not match the number of elements in the address range [0:63] File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 14
+Warning (10030): Net "rom.data_a" at sm_rom.v(10) has no driver or initial value, using a default initial value '0' File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 10
+Warning (10030): Net "rom.waddr_a" at sm_rom.v(10) has no driver or initial value, using a default initial value '0' File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 10
+Warning (10030): Net "rom.we_a" at sm_rom.v(10) has no driver or initial value, using a default initial value '0' File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 10
+Info (12128): Elaborating entity "sm_cpu" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 48
+Info (12128): Elaborating entity "sm_register" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu|sm_register:r_pc" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 37
+Info (12128): Elaborating entity "sm_register_file" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu|sm_register_file:rf" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 65
+Info (12128): Elaborating entity "sm_alu" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu|sm_alu:alu" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 86
+Info (12128): Elaborating entity "sm_control" for hierarchy "sm_top:sm_top|sm_cpu:sm_cpu|sm_control:sm_control" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_cpu.v Line: 100
+Info (12128): Elaborating entity "sm_hex_display" for hierarchy "sm_hex_display:digit_5" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 57
+Info (12128): Elaborating entity "external_sm_hex_display" for hierarchy "external_sm_hex_display:external_sm_hex_display" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 71
+Info (12128): Elaborating entity "sm_hex_display_our" for hierarchy "external_sm_hex_display:external_sm_hex_display|sm_hex_display_our:digit_00" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/external_sm_hex_display.v Line: 14
+Info (12128): Elaborating entity "sm_hex_display_digit" for hierarchy "external_sm_hex_display:external_sm_hex_display|sm_hex_display_digit:sm_hex_display_digit" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/external_sm_hex_display.v Line: 25
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer sm_top:sm_top|sm_clk_divider:sm_clk_divider|Mux0 File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 89
+    Warning (19017): Found clock multiplexer sm_top:sm_top|sm_clk_divider:sm_clk_divider|Mux0 File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_top.v Line: 89
 Warning (276027): Inferred dual-clock RAM node "sm_top:sm_top|sm_cpu:sm_cpu|sm_register_file:rf|rf_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "sm_top:sm_top|sm_rom:reset_rom|rom" is uninferred due to inappropriate RAM size File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 10
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/db/de10_standard.ram0_sm_rom_e96ad487.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Info (276004): RAM logic "sm_top:sm_top|sm_rom:reset_rom|rom" is uninferred due to inappropriate RAM size File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/src/sm_rom.v Line: 10
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/db/de10_standard.ram0_sm_rom_e96ad487.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "sm_top:sm_top|sm_cpu:sm_cpu|sm_register_file:rf|rf_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1452,69 +1452,69 @@ Info (12133): Instantiated megafunction "sm_top:sm_top|sm_cpu:sm_cpu|sm_register
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_66j1.tdf
-    Info (12023): Found entity 1: altsyncram_66j1 File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/db/altsyncram_66j1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_66j1 File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/db/altsyncram_66j1.tdf Line: 27
 Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[0]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[1]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[3]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[4]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[6]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[7]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[8]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[9]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[10]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[11]" and its non-tri-state driver. File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[0]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[1]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[3]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[4]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[6]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[7]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[8]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[9]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[10]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO[11]" and its non-tri-state driver. File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
 Warning (13032): The following tri-state nodes are fed by constants
-    Warning (13033): The pin "GPIO[2]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[5]" is fed by VCC File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[12]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[13]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[14]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[15]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[16]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[17]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[18]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[19]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[20]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[21]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[22]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[23]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[24]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[25]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[26]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13033): The pin "GPIO[27]" is fed by GND File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[2]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[5]" is fed by VCC File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[12]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[13]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[14]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[15]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[16]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[17]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[18]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[19]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[20]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[21]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[22]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[23]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[24]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[25]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[26]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13033): The pin "GPIO[27]" is fed by GND File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "GPIO[0]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[1]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[3]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[4]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[5]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[6]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[7]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[8]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[9]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[10]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
-    Warning (13010): Node "GPIO[11]~synth" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[0]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[1]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[3]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[4]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[5]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[6]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[7]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[8]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[9]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[10]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
+    Warning (13010): Node "GPIO[11]~synth" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 520 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.map.smsg
+Info (144001): Generated suppressed messages file D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "CLOCK2_50" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 3
-    Warning (15610): No output dependent on input pin "CLOCK3_50" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 4
-    Warning (15610): No output dependent on input pin "CLOCK4_50" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 5
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 8
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 8
+    Warning (15610): No output dependent on input pin "CLOCK2_50" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 3
+    Warning (15610): No output dependent on input pin "CLOCK3_50" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 4
+    Warning (15610): No output dependent on input pin "CLOCK4_50" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 5
+    Warning (15610): No output dependent on input pin "KEY[2]" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 8
+    Warning (15610): No output dependent on input pin "KEY[3]" File: D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.v Line: 8
 Info (21057): Implemented 1187 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 52 output pins
@@ -1522,15 +1522,15 @@ Info (21057): Implemented 1187 device resources after synthesis - the final reso
     Info (21061): Implemented 1057 logic cells
     Info (21064): Implemented 24 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 4841 megabytes
-    Info: Processing ended: Fri Oct 08 13:09:50 2021
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 4855 megabytes
+    Info: Processing ended: Fri Oct 08 13:16:25 2021
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:01:03
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/forga/YandexDisk/Education/2020-2022/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.map.smsg.
+The suppressed messages can be found in D:/Quartus_labs/SPDS/lab_2/schoolMIPS/board/de10_standard/de10_standard.map.smsg.
 
 
