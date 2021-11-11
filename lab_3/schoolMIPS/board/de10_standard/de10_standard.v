@@ -27,9 +27,9 @@ module de10_standard
     wire          rst_n      =  KEY[0];
     wire          clkEnable  =  SW [9] | ~KEY[1];
     wire [  3:0 ] clkDevide  =  SW [8:5];
-    wire [  4:0 ] regAddr    =  SW [4:0];
-	wire [  4:0 ] dmRAddrOut =	SW [4:0];
-	wire [ 31:0 ] dmRDataOut;
+    // wire [  4:0 ] regAddr    =  SW [4:0];
+    wire [  4:0 ] dmRAddrOut =	SW [4:0];
+    wire [ 31:0 ] dmRDataOut;
     wire [ 31:0 ] regData;
 
     //cores

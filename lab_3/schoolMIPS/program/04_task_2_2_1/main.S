@@ -34,7 +34,7 @@ if:
             beq  $v1, $0, memory_loop_next # if memory[addr][31] == 0 goto memory_loop_next
 
 invert:
-            xori $a0, $a0, 0xffffffff	# bitwose xor == inversion
+            xori $a0, $a0, 0xffffffff	# bitwise xor == inversion
             sw   $a0, 0x00000000($v0)	# store inverted word
 
 memory_loop_next:            

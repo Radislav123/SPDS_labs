@@ -103,7 +103,7 @@ module ram_2_port (
 		altsyncram_component.clock_enable_output_b = "BYPASS",
 		altsyncram_component.indata_reg_b = "CLOCK0",
 `ifdef NO_PLI
-		altsyncram_component.init_file = "../../program/data_memory.rif"
+		altsyncram_component.init_file = "../../../program/data_memory.hex"
 `else
 		altsyncram_component.init_file = "../../program/data_memory.hex"
 `endif
