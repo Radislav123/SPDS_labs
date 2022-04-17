@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SVCompilerDirectivesDefines">
+    <option name="defines">
+      <map>
+        <entry key="$PROJECT_DIR$/DE1_SOC_golden_top.v">
+          <value>
+            <map>
+              <entry key="ENABLE_ADC">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1459" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_AUD">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1478" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_CLOCK">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1563" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_CLOCK2">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1497" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_CLOCK3">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1519" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_CLOCK4">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1541" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_DRAM">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1584" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_FAN">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1604" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_FPGA">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1623" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_GPIO">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1643" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_HEX">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1663" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_IRDA">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1703" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_KEY">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1723" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_LEDR">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1742" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_PS2">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1762" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_SW">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1781" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_TD">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1799" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+              <entry key="ENABLE_VGA">
+                <value>
+                  <list>
+                    <Body>
+                      <option name="offset" value="1817" />
+                      <option name="source" value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+                    </Body>
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="dependencies">
+      <map>
+        <entry key="ALTERA_RESERVED_QIS">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/ram.v" />
+              <option value="$PROJECT_DIR$/ram2.v" />
+              <option value="$PROJECT_DIR$/ram_bb.v" />
+              <option value="$PROJECT_DIR$/ram2_bb.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_ADC">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_AUD">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_CLOCK">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_CLOCK2">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_CLOCK3">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_CLOCK4">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_DRAM">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_FAN">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_FPGA">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_GPIO">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_HEX">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_HPS">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_IRDA">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_KEY">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_LEDR">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_PS2">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_SW">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_TD">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ENABLE_VGA">
+          <value>
+            <set>
+              <option value="$PROJECT_DIR$/DE1_SOC_golden_top.v" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="status" value="FINALIZE_DEFINES" />
+  </component>
+</project>
